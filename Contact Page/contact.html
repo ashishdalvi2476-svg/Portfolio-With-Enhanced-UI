@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f6f4f0" />
+  <meta name="description" content="Contact Ashish Dalvi — share your name, phone number and what you'd like to discuss." />
+  <title>Let's Talk — Ashish Dalvi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/sreda" rel="stylesheet" />
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+  <header class="contact-header">
+    <a class="contact-brand" href="index.html" aria-label="Back to Ashish Dalvi portfolio">AD<span>.</span></a>
+    <a class="back-link" href="index.html"> <span aria-hidden="true">←</span> Back to portfolio</a>
+  </header>
+  <main class="contact-layout">
+    <section class="contact-intro" aria-labelledby="contact-title">
+      <p class="eyebrow"><span></span> OPEN TO GOOD CONVERSATIONS</p>
+      <h1 id="contact-title">Let's start<br /><em>a conversation.</em></h1>
+      <p class="intro-copy">Have an idea, opportunity, question, or something you'd like to build together? Share a few details and tell me what is on your mind.</p>
+      <div class="response-note"><span class="note-mark">↗</span><span><strong>Usually responds within 24 hours</strong><small>Leave your details and a short note about why you'd like to connect.</small></span></div>
+      <div class="contact-orbit-art" aria-hidden="true"><i></i><i></i><i></i><b>AD</b></div>
+    </section>
+
+    <section class="form-panel" aria-label="Contact form">
+      <div class="form-heading"><p> A QUICK INTRODUCTION </p><span>01 — 03</span></div>
+      <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+
+        <input type="hidden" name="access_key" value="54febea1-b2b2-4137-83ee-4243741837d4">
+        
+        <label for="visitor-name">Your name</label>
+        <input id="visitor-name" name="name" type="text" placeholder="How should I address you?" autocomplete="name" minlength="2" maxlength="80" required />
+
+        <label for="visitor-phone">Phone number</label>
+        <input id="visitor-phone" name="phone" type="tel" placeholder="+91 98765 43210" autocomplete="tel" inputmode="tel" pattern="[+0-9() .-]{8,20}" maxlength="20" required aria-describedby="phone-hint" />
+        <small class="field-hint" id="phone-hint">Include your country code if you're outside India.</small>
+
+        <label for="visitor-reason">Why would you like to connect?</label>
+        <textarea id="visitor-reason" name="reason" rows="5" minlength="10" maxlength="800" placeholder="Tell me a little about your idea, opportunity, or question..." required></textarea>
+
+        <button class="submit-button" type="submit">SUBMIT MESSAGE <span aria-hidden="true">↗</span></button>
+        <p class="form-error" id="form-error" role="alert" hidden>Please complete all fields with a valid phone number and a short message.</p>
+      </form>
+      <div class="success-panel" id="success-panel" role="status" aria-live="polite" hidden>
+        <div class="success-icon" aria-hidden="true">✓</div>
+        <p class="success-kicker">MESSAGE PREPARED</p>
+        <h2>Thank you, <span id="success-name">there</span>.</h2>
+        <p>I’ll connect with you within 24 hours once message delivery is connected.</p>
+        <a href="index.html" class="return-link">BACK TO PORTFOLIO <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+  <footer class="contact-footer"><span>ASHISH DALVI</span><span>BUILT WITH CURIOSITY · PUNE, INDIA</span></footer>
+  <script src="contact.js"></script>
+</body>
+</html>
